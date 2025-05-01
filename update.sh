@@ -218,6 +218,10 @@ else
         && echo 36 \
         && source $VENV/bin/activate >> $LOGFILE \
         && echo 38 \
+        && sudo /usr/local/share/adsbexchange/venv/bin/pip3 install setuptools >> $LOGFILE \
+        && echo "WARNING: installed setuptools; thanks to Drife for the fix on the ADSBExchange Discord!" \
+        && sudo /usr/local/share/adsbexchange/venv/bin/pip3 install pyasyncore >> $LOGFILE \
+        && echo "WARNING: installed pyasyncore; thanks again Drife!" \
         && python3 setup.py build >> $LOGFILE \
         && echo 40 \
         && python3 setup.py install >> $LOGFILE \
