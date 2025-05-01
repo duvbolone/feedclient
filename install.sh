@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-REPO="https://github.com/adsbexchange/feedclient.git"
+REPO="https://github.com/duvbolone/feedclient.git"
 BRANCH="master"
 IPATH=/usr/local/share/adsbexchange
 mkdir -p $IPATH
